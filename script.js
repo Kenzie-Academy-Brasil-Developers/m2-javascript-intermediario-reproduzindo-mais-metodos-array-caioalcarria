@@ -228,8 +228,14 @@ const arrayJoin = ["Fogo", "no", "Parquinho"]; // array para iteração do méto
 
 function join(array, value) {
   //sua lógica aqui
-  array =  array.toString("")
-  return array.replace(/,/g, value)
+  final = arrayJoin[0]
+  for (let i=1;i<arrayJoin.length;i++){
+    final=final+value+arrayJoin[i]
+  }
+
+  
+  
+  return final
 }
 
  console.log(join(arrayJoin, " "));
